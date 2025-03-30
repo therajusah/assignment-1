@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+```markdown
+# React TS Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **React TypeScript** based application. It uses **Tailwind CSS** for styling, and it is designed to be simple and easy to use.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Checkbox component** with hover and press states.
+- **Pixel-perfect design** implementation.
+- Built with **React** and **TypeScript**.
+- Styled using **Tailwind CSS**.
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Make sure you have the following installed on your machine:
+
+- **Node.js** (version 14 or higher)
+- **npm** (Node Package Manager)
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/therajusah/assignment-1.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd assignment-1
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to `http://localhost:5173` to view the application.
+
+## File Structure
+
+- **src**: Contains all the source code of the project.
+  - **assets**: Contains images or other static assets.
+  - **components**: React components like buttons, checkboxes, and UI elements.
+  - **lib**: Utility functions or libraries.
+  - **pages**: Pages or views in the application.
+  - **store**: Global state management.
+- **public**: Public files that are served by the application.
+- **.gitignore**: Specifies files and directories to ignore in Git.
+- **package.json**: Project dependencies and configuration.
+- **tsconfig.json**: TypeScript configuration file.
+- **vite.config.ts**: Configuration file for the Vite build tool.
+- **index.html**: Main HTML template for the application.
+  
+## Development
+
+- To start the development server, run `npm run dev`.
+- The app will automatically reload when you make changes to the source code.
+
+## Notes
+
+- This project uses **Tailwind CSS** for styling. You can modify the configuration in the `tailwind.config.js` file.
+- The components, like the checkbox, have been enhanced with hover and press states for better user interaction.
+- The UI has been designed to be pixel-perfect for a smooth and precise user experience.
+
+---
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
