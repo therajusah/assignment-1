@@ -1,4 +1,3 @@
-```markdown
 # React TS Website
 
 This project is a **React TypeScript** based application. It uses **Tailwind CSS** for styling, and it is designed to be simple and easy to use.
@@ -73,7 +72,5 @@ Make sure you have the following installed on your machine:
 - The components, like the checkbox, have been enhanced with hover and press states for better user interaction.
 - The UI has been designed to be pixel-perfect for a smooth and precise user experience.
 
----
 
-```
 
