@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
 
   return (
     <button
-      className={`w-full py-3 rounded-md text-center font-medium transition-colors ${
+      className={`w-full py-3 rounded-sm text-center transition-colors mt-1 text-base font-extralight ${
         isHovered 
           ? "bg-[#FFD84D]" 
           : "bg-[#FFCE22]"

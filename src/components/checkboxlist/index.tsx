@@ -24,8 +24,8 @@ const CheckboxList: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
-      <div className="p-6">
+    <div className="w-[370px] h-[326px] mx-auto mt-[50px] bg-white rounded-[6px] shadow-xl overflow-hidden border border-[#EEEEEE]">
+      <div className="px-6 pt-4">
         <CheckboxItem
           label="All pages"
           checked={allChecked}
@@ -33,7 +33,7 @@ const CheckboxList: React.FC = () => {
           isFirst
         />
 
-        <Separator className="my-[2px]" />
+        <Separator className="my-2" />
 
         <div>
           {pages.map((page) => (
@@ -50,7 +50,7 @@ const CheckboxList: React.FC = () => {
         <Separator className="my-[2px]" />
       </div>
 
-      <div className="px-6 pb-6 ">
+      <div className="px-6 pb-4 pt-2">
         <Button onClick={buttonClick}>Done</Button>
       </div>
     </div>
