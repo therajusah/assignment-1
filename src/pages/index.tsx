@@ -1,4 +1,4 @@
-import CheckboxList from "../components/checkboxlist/checkboxlist";
+import CheckboxList from "../components/checkboxlist";
 
 const Home = () => {
   return (
